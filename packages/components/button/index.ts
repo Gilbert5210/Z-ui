@@ -1,5 +1,4 @@
-import { withInstall } from '@zjy-ui/utils';
-import type { App } from 'vue'
+import { withInstall } from '@zjy-ui/utils'
 import Button from './src'
 
 const ZButton = withInstall(Button)

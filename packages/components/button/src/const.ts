@@ -1,15 +1,15 @@
-import { ExtractPropTypes } from "vue"
+import { ExtractPropTypes } from 'vue'
 
 export const buttonProps = {
     color: {
         type: String,
-        default: ''
+        default: '',
     },
 
     size: {
         type: String,
-        default: 'samll'
-    }
+        default: 'samll',
+    },
 }
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>

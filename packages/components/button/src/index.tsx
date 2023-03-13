@@ -1,12 +1,12 @@
-import { defineComponent } from "vue";
-import {buttonProps} from './const'
+import { defineComponent } from 'vue'
+import { buttonProps } from './const'
 
 export default defineComponent({
     name: 'ZButton',
 
     props: buttonProps,
 
-    setup (props) {
+    setup(props) {
         return () => (
             <div class={'z-button'}>
                 <span>按钮组件</span>
@@ -14,5 +14,5 @@ export default defineComponent({
                 <span> {props.color} </span>
             </div>
         )
-    }
+    },
 })
