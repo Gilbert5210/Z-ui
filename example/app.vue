@@ -1,14 +1,14 @@
 <template>
-    <div>测试页面</div>
-    <div>
-        button
-        <z-button color="red" />
-    </div>
+  <div>测试页面</div>
+  <div>
+    button
+    <z-button color="red" />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-    name: 'ExampleDemo',
+  name: 'ExampleDemo',
 })
 </script>

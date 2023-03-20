@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@commitlint/config-conventional': ^17.4.4
       '@typescript-eslint/eslint-plugin': ^5.54.1
       '@typescript-eslint/parser': ^5.54.1
       '@vitejs/plugin-vue': ^4.0.0
@@ -32,6 +33,7 @@ importers:
       '@zjy-ui/theme-chalk': link:packages/theme-chalk
       '@zjy-ui/utils': link:packages/utils
     devDependencies:
+      '@commitlint/config-conventional': 17.4.4
       '@typescript-eslint/eslint-plugin': 5.54.1_4rfaf6mlw2mmutqjcopwvbftpu
       '@typescript-eslint/parser': 5.54.1_vgl77cfdswitgr47lm5swmv43m
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.36
@@ -59,7 +61,7 @@ importers:
   packages/components:
     specifiers: {}
 
-  packages/thems-chalk:
+  packages/theme-chalk:
     specifiers: {}
 
   packages/utils:
@@ -388,6 +390,13 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+    dev: true
+
+  /@commitlint/config-conventional/17.4.4:
+    resolution: {integrity: sha512-u6ztvxqzi6NuhrcEDR7a+z0yrh11elY66nRrQIpqsqW6sZmpxYkDLtpRH8jRML+mmxYQ8s4qqF06Q/IQx5aJeQ==}
+    engines: {node: '>=v14'}
+    dependencies:
+      conventional-changelog-conventionalcommits: 5.0.0
     dev: true
 
   /@commitlint/config-validator/17.4.4:
@@ -1535,6 +1544,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/5.0.0:
+    resolution: {integrity: sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
       q: 1.5.1
     dev: true
 
